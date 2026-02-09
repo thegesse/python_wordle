@@ -4,7 +4,6 @@ current_word = random.choice(["toast", "abuse", "glove", "obese", "whole"])
 
 #game loop
 for i in range (5):
-    print(current_word)
     guess = input(" ")
     for g in range(min(len(guess), len(current_word))):
         if guess[g] == current_word[g]:
